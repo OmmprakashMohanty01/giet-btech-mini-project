@@ -27,3 +27,9 @@ If you'd like to contribute, please fork the repository and make changes to the 
 ## Citing this Repository
 
 If you use this repository as a reference in your work, please include a citation in your document (e.g. paper, thesis, or blog post).
+
+## Additional Guidelines for Collaborators
+
+- Ensure that all code changes are reviewed by at least one other developer before being merged into the main branch.
+- Utilize code completion and type checking tools where feasible.
+- Regularly commit intermediate changes and include a detailed description of the work in progress.
