@@ -19,3 +19,12 @@ const app = express();
 app.get('/', (req, res) => {
   res.send(`Welcome to our website!`);
 });
+
+app.use(express.json()); 
+
+app.post('/users', (req, res) => {
+  const { name, email } = req.body;
+  const user = { name, email };
+  
+  res.status(201).send(user);
+});
