@@ -28,3 +28,11 @@ app.post('/users', (req, res) => {
   
   res.status(201).send(user);
 });
+
+app.put('/users/:id', (req, res) => {
+  const { id } = req.params;
+  const { name, email } = req.body;
+
+  res.status(201).send({ id, name, email });
+  
+});
