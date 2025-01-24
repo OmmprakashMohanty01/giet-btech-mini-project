@@ -33,3 +33,10 @@ If you use this repository as a reference in your work, please include a citatio
 - Ensure that all code changes are reviewed by at least one other developer before being merged into the main branch.
 - Utilize code completion and type checking tools where feasible.
 - Regularly commit intermediate changes and include a detailed description of the work in progress.
+
+- Use version control systems such as Git or SVN for versioning
+- Include a CHANGELOG file for tracking significant changes to the repository
+- Utilize a code linter to enforce consistent coding standards
+- Document known limitations or areas for improvement in the repository
+- Provide an example use case or demo for users to quickly understand the functionality
+- Use a consistent header formatting throughout the README file
