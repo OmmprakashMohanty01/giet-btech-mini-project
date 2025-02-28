@@ -36,3 +36,8 @@ app.put('/users/:id', (req, res) => {
   res.status(201).send({ id, name, email });
   
 });
+
+app.delete('/users/:id', (req, res) => {
+  const { id } = req.params;
+  res.status(204).send();
+});
