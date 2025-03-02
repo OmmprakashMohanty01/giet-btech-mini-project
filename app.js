@@ -41,3 +41,9 @@ app.delete('/users/:id', (req, res) => {
   const { id } = req.params;
   res.status(204).send();
 });
+
+app.get('/users/:id', (req, res) => {
+  const { id } = req.params;
+  
+  res.status(200).send({ id });
+});
