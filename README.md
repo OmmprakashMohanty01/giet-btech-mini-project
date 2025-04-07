@@ -40,3 +40,7 @@ If you use this repository as a reference in your work, please include a citatio
 - Document known limitations or areas for improvement in the repository
 - Provide an example use case or demo for users to quickly understand the functionality
 - Use a consistent header formatting throughout the README file
+
+- Documenting Known Security Vulnerabilities
+- Using Docker for Development and Deployment
+- Following a standardized formatting for commit messages
