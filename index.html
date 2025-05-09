@@ -67,3 +67,39 @@
 </div>
 
 <script src="script.js"></script>
+
+function handleSubmit(event) {
+  event.preventDefault();
+  const memberId = document.getElementById('search-member-id').value.trim();
+  if (memberId) {
+    fetch('/search-member', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ memberId })
+    })
+      .then(response => response.json())
+      .then(data => {
+        if (data.member) {
+          document.getElementById('search-member-results').innerHTML = `
+            <h3>Member Found:</h3>
+            <p>ID: ${data.member.id}</p>
+            <p>Name: ${data.member.name}</p>
+          `;
+          document.getElementById('member-details-form').style.display = 'block';
+          document.getElementById('member-details-id').value = data.member.id;
+          document.getElementById('member-details-name').value = data.member.name;
+          document.getElementById('member-details-email').value = data.member.email;
+        } else {
+          document.getElementById('search-member-results').innerHTML = `
+            <h3>Member Not Found:</h3>
+            <p>Please try searching again.</p>
+          `;
+        }
+      })
+      .catch(error => console.error('Error fetching member data:', error));
+  }
+}
+
+document.getElementById('search-member-form').addEventListener('submit', handleSubmit);
