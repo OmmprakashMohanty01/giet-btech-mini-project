@@ -44,3 +44,15 @@ If you use this repository as a reference in your work, please include a citatio
 - Documenting Known Security Vulnerabilities
 - Using Docker for Development and Deployment
 - Following a standardized formatting for commit messages
+
+- ## Contributing Guidelines for Pull Requests
+    - Ensure all pull requests include a detailed description outlining changes, motivations, and any relevant context.
+    - Utilize a standardized issue template as a starting point.
+    - Use clear, concise language and provide context-specific information.
+    - Include relevant screenshots, diagrams, or images where applicable.
+    - Collaborate closely with reviewers to address all concerns in a timely manner.
+
+- ## Repository Management
+    - Regularly update the issue tracker with new tasks, bugs, and enhancements.
+    - Utilize labels and tags to categorize issues and facilitate organization.
+    - Implement pull request automation for continuous integration and testing.
