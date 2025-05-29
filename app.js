@@ -47,3 +47,7 @@ app.get('/users/:id', (req, res) => {
   
   res.status(200).send({ id });
 });
+
+app.get('/users', (req, res) => {
+  res.status(200).send({ message: 'Get all users' });
+});
